@@ -1,0 +1,258 @@
+.cardItem {
+  width: 369px;
+  height: 319px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  transition: ease-in 0.2s;
+  z-index: 2;
+
+  img {
+    border-radius: 12px 12px 0px 0px;
+    height: 225px;
+    width: 369px;
+    z-index: 3;
+  }
+
+  .detail {
+    z-index: 3;
+    position: relative;
+    margin: 0.3rem 0.8rem;
+    font-family: "Nunito";
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    .price {
+      z-index: 4;
+      font-size: 20px;
+      color: #5f8d6c;
+    }
+    .area {
+      z-index: 4;
+      font-size: 16px;
+    }
+    .address {
+      z-index: 4;
+      font-size: 15px;
+    }
+    .heart {
+      z-index: 4;
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.cardItem:hover {
+  transition: ease-in 0.2s;
+  transform: scale(1.009);
+}
+
+.search {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  div {
+    width: 652px;
+    background: #f7f7f7;
+    border-radius: 54px;
+    display: flex;
+    padding: 0.5rem 1rem;
+    align-items: center;
+
+    input {
+      background-color: #ffffff00;
+      font-family: "Inter";
+      border: none;
+      outline: none;
+      width: 100%;
+      font-size: 16px;
+      padding-left: 1rem;
+    }
+  }
+
+  span {
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
+
+.cardname {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  font-family: "Nunito";
+  margin: 1rem 0;
+  div {
+    margin: 0.3rem 0;
+  }
+  header {
+    font-family: "Work Sans";
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .cardname_g {
+    z-index: 3;
+    display: flex;
+
+    div:last-child {
+      margin-left: 5rem;
+    }
+  }
+  p,
+  label {
+    margin: 0;
+    font-weight: 400;
+  }
+  p {
+    font-size: 18px;
+    color: #4a4a4a;
+  }
+  label {
+    font-size: 13px;
+    color: #828282;
+  }
+}
+.cardPicture {
+  width: 100%;
+  .mainPic {
+    width: 100%;
+  }
+  .subPic {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 0.5rem;
+    width: max-content;
+  }
+}
+.cardBuy {
+  font-family: "Nunito";
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid #d0d0d0;
+  label {
+    color: #464646;
+  }
+  span:last-child {
+    cursor: pointer;
+  }
+  button {
+    font-size: 14px;
+    font-family: "Nunito";
+    color: white;
+    background: #5f8d6c;
+    border-radius: 74px;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  button:hover {
+    transition: 0.4s;
+    background: #72a07f;
+  }
+  .cardBuy_g1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div {
+      label:first-child {
+        margin: 0;
+        font-size: 38px;
+        color: #5f8d6c;
+      }
+      label {
+        font-size: 16px;
+      }
+      span {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  .cardBuy_g2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+      margin-right: 1rem;
+      font-size: 20px;
+    }
+  }
+}
+.cardGgMap {
+  margin-top: 1rem;
+  font-family: "Nunito";
+  header {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+  }
+  .mainMap {
+    width: 100%;
+    height: 267px;
+    background-color: #f3f3f3;
+    margin-bottom: 0.5rem;
+  }
+  .subMap {
+    display: flex;
+    font-weight: 300;
+    label {
+      margin-right: 2rem;
+    }
+  }
+  .detail {
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
+.cardPayment {
+  font-family: "Nunito";
+  padding-bottom: 1rem;
+  border-bottom: 0.5px solid #d0d0d0;
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  header {
+    color: #5f8d6c;
+    font-size: 24px;
+  }
+  .detail {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    div:first-child {
+      align-items: flex-start;
+    }
+    div:last-child {
+      align-items: flex-end;
+    }
+  }
+  button {
+    margin-top: 1rem;
+    background: #5f8d6c;
+    border: none;
+    width: 100%;
+    color: white;
+    border-radius: 70px;
+    font-size: 14px;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  button:hover {
+    transition: 0.4s;
+    background: #72a07f;
+  }
+}
